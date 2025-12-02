@@ -10,6 +10,10 @@ public class NewArrayList<T> {
         size = 0;
     }
 
+    /**
+     *
+     * @param element adds the element to the array list
+     */
     public void add(T element) {
         if (size == data.length) {
             resize();
@@ -17,6 +21,11 @@ public class NewArrayList<T> {
         data[size++] = element;
     }
 
+    /**
+     *
+     * @param index index
+     * @return the item at the index
+     */
     public T get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
@@ -24,6 +33,10 @@ public class NewArrayList<T> {
         return data[index];
     }
 
+    /**
+     *
+     * @return size of the array list
+     */
     public int size() {
         return size;
     }
