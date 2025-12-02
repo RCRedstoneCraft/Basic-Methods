@@ -10,5 +10,7 @@ public class Main {
         Methods.NewArrayList<Integer> zahlen = new Methods.NewArrayList<>();
         zahlen.add(1);
         zahlen.add(42);
+
+        System.out.println(zahlen.get(1) + namen.get(1));
     }
 }
