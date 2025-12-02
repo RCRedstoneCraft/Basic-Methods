@@ -17,7 +17,7 @@ public class NewArrayList<T> {
     }
 
     private void resize() {
-        T[] newData = (T[]) new Object[data.length * 2];
+        T[] newData = (T[]) new Object[data.length + 1];
         System.arraycopy(data, 0, newData, 0, data.length);
         data = newData;
     }
