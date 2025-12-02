@@ -9,7 +9,7 @@ public class NewArrayList<T> {
 
     public void add(T element) {
         resize();
-        data[data.length] = element;
+        data[data.length-1] = element;
     }
 
     public T get(int index) {
